@@ -30,6 +30,7 @@ public class UserMealsUtil {
 
     public static List<UserMealWithExceed>  getFilteredWithExceeded(List<UserMeal> mealList, LocalTime startTime, LocalTime endTime, int caloriesPerDay) {
         // Здесь я уже делал циклы
+        // а тут лямбдой делал
         return null;
     }
 }
