@@ -9,15 +9,17 @@ import java.time.LocalDateTime;
 public class MealWithExceed {
     private final LocalDateTime dateTime;
 
-    private final String description;
+    private final String description1;
 
     private final int calories;
 
     private final boolean exceed;
 
-    public MealWithExceed(LocalDateTime dateTime, String description, int calories, boolean exceed) {
+    public String test;
+
+    public MealWithExceed(LocalDateTime dateTime, String description1, int calories, boolean exceed) {
         this.dateTime = dateTime;
-        this.description = description;
+        this.description1 = description1;
         this.calories = calories;
         this.exceed = exceed;
     }
@@ -26,9 +28,25 @@ public class MealWithExceed {
     public String toString() {
         return "UserMealWithExceed{" +
                 "dateTime=" + dateTime +
-                ", description='" + description + '\'' +
+                ", description1='" + description1 + '\'' +
                 ", calories=" + calories +
                 ", exceed=" + exceed +
                 '}';
+    }
+
+    public LocalDateTime getDateTime() {
+        return dateTime;
+    }
+
+    public String getDescription1() {
+        return description1;
+    }
+
+    public int getCalories() {
+        return calories;
+    }
+
+    public boolean isExceed() {
+        return exceed;
     }
 }
